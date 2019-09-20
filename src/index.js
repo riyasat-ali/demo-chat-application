@@ -1,21 +1,18 @@
-// import 'es5-shim';
-// import 'es6-shim';
-// import 'es6-promise';
-
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { browserHistory} from 'react-router';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './containers/app';
+import Login from './containers/Login';
+import { createStore, applyMiddleware } from 'redux';
+import rootReducer from './reducers';
+import logger from './store/logger';
 
 
 // Global styles
 import './styles/index.css';
-import { createStore, applyMiddleware } from 'redux';
-import rootReducer from './reducers';
-import logger from './store/logger';
-import Login from './Login';
+import 'antd/dist/antd.css'
 
 const store = createStore(rootReducer,applyMiddleware(logger));
 

@@ -1,11 +1,6 @@
 import * as React from 'react';
 
 export default class ChatInput extends React.Component {
-    static propTypes = {
-        // userID: React.PropTypes.string,
-        // sendMessage: React.PropTypes.func,
-    };
-
     state = {
         history : [],
     }

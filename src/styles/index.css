@@ -30,9 +30,11 @@ button {
 }
 
 
-/* ChatHistory styles */.collection {
+/* ChatHistory styles */
+.collection {
   margin-bottom:130px;
   margin-top: -1px;
+  border: 0px !important;
   /* float: right; */
   /* text-align: right; */
  }
@@ -40,15 +42,68 @@ button {
    text-align: left;
  }
  .message-date {
-   color: #585858;
+   color: #ffff;
+   font-size: 12px;
+
  }
  body {
    background: #EEEEEE;
  }
 
- .circle{
-   text-align: right;
+ .collection .collection-item.avatar {
+  padding-left: 20px !important;
+  position: relative;
+  clear: both;
+}
+
+ .sender{
+  float: left;
+  background: #5C73DB;
+  padding: 10px 20px 10px 70px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 70%;
+  color: white
  }
- .btn-large{
-   text-align: center;
+
+
+ .receiver{
+  float: right;
+  background: #00c854;
+  padding: 10px 20px 10px 70px;
+  border-radius: 5px;
+  position: relative;
+  max-width: 70%;
+  color: white
  }
+
+ .collection .collection-item{
+   background: transparent !important;
+   border-bottom: 0px !important;
+ }
+
+ .mdi-action-alarm{
+   font-size: 12px;
+ }
+
+ .topBar{
+  height: 45px;
+  text-align: right;
+  background: #009688 !important;
+  vertical-align: center;
+  border-bottom: 1px solid grey;
+ }
+ .topBar button {
+   cursor: pointer;
+   margin-right: 5px;
+   margin-top: 5px;
+   display: inline-flex;
+ }
+
+ .topBar h5 {
+   float: left;
+   color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
